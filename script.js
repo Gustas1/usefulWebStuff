@@ -12,3 +12,18 @@ function write(id, text, k, sp) {
 // k is needed to reset the number so it can be compared to the length
 // sp is the speed at you want to text to be written
 
+function swap(id, cls) {
+    document.getElementById(id).classList.toggle(cls);
+}
+// useful function to swap an id's class
+
+function classEqs(id, cls) {
+  document.getElementById(id).className = cls;
+}
+// same thing as before but makes the class completely apply to id
+
+function buttonClick() {
+  swap("button1", "button1ClassAfter");
+  swap("circle", "circleClassAfter");
+}
+  
